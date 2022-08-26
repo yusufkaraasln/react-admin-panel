@@ -1,0 +1,48 @@
+.sidebar {
+  flex: 1;
+
+  height: calc(100vh - 50px);
+  position: sticky;
+  top: 50px;
+  &-wrapper {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px;
+    color: rgb(0, 0, 150);
+    &-menu {
+      margin-bottom: 10px;
+      .menu-title {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgb(0, 0, 83);
+      }
+      .menu-list {
+        padding: 5px;
+
+        &-item {
+          padding: 5px;
+          margin: 10px 0;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          border-radius: 10px;
+          transition: 200ms all;
+          &:hover,
+          &.active {
+            background: rgb(240, 240, 255);
+          }
+
+          .icons {
+            margin-right: 10px;
+            font-size: 20px;
+          }
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

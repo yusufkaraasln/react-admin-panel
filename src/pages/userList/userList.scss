@@ -1,0 +1,30 @@
+.userList{
+    flex: 4;
+    &User{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    &Img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    &Delete{
+        color: rgb(130, 130, 255);
+        background: rgb(255, 215, 215);
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 1rem;padding: .4rem 1rem;
+    }
+    &Edit{
+        color: rgb(130, 130, 255);
+        cursor: pointer;
+        margin-right: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 1rem;padding: .4rem 1rem;
+    }
+}
